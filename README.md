@@ -12,5 +12,4 @@ This repository (though fairly new still) will contain all kinds of scripts rang
 ### My Notes:
 My laptop uses the _English - US Keyboard_ setting and hence, some of my duckyscripts may not work on other laptops that use a different language setting for their keyboard.  
   
-This is an interesting 'flaw' in the rubber ducky as anyone with a keyboard that uses a language setting that isn't popular/similar to the English - US Keyboard might be able to escape unharmed as the ducky tries to run it's script with the wrong keys.  
-However, if one knows your target well enough you can customise your scripts accordingly.
+This is an interesting 'flaw' in the rubber ducky as anyone with a keyboard that uses a language setting that isn't popular/similar to the English - US Keyboard might be able to escape unharmed as the ducky tries to run it's script with the wrong keys. However, if you know your target well enough you can customise your scripts accordingly.
