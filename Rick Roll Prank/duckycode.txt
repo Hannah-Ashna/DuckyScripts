@@ -1,3 +1,4 @@
+REM DuckyScript by Github User: hannah-ashna
 REM Rick Roll Prank ft. a little message
 
 REM Use 'run' to open up the youtube link
